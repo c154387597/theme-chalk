@@ -26,6 +26,16 @@
     font-weight: 500;
     transition: border-bottom-color .3s;
     outline: none;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: 10px;
+      width: 5px;
+      height: 25px;
+      border-radius: 5px;
+      background-color: $--color-primary;
+    }
     @include e(arrow) {
       margin: 0 8px 0 auto;
       transition: transform .3s;

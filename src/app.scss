@@ -1,0 +1,81 @@
+@import "mixins/mixins";
+@import "common/var";
+
+a.link {
+  color: $--color-primary;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.app-wrapper > header {
+  color: $hd-color;
+  background-color: $hd-bg;
+}
+
+.theme-color {
+  color: $--color-primary !important;
+}
+
+.theme-bg {
+  background-color: $--color-primary !important;
+}
+
+#nprogress .bar {
+  background-color: $--color-primary;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px $--color-primary, 0 0 5px $--color-primary;
+}
+
+.tags-view-container {
+  .tags-view-wrapper {
+    .tags-view-item {
+      &.active {
+        background-color: $--color-primary;
+        border-color: $--color-primary;
+      }
+    }
+  }
+}
+
+// sidebar
+.sidebar-container {
+  background-color: $menuBg;
+  border-right: 1px solid $menuBorderColor;
+
+  .svg-icon {
+    color: $menuIconColor;
+  }
+  // menu hover
+  .submenu-title-noDropdown,
+  .el-submenu__title {
+    &:hover {
+      background-color: $menuHover !important;
+    }
+  }
+
+  .is-active>.el-submenu__title {
+    color: $subMenuActiveText !important;
+  }
+
+  & .nest-menu .el-submenu>.el-submenu__title,
+  & .el-submenu .el-menu-item {
+    min-width: $sideBarWidth !important;
+    background-color: $subMenuBg !important;
+
+    &:hover {
+      background-color: $subMenuHover !important;
+    }
+  }
+}
+.el-menu--vertical {
+  .nest-menu .el-submenu>.el-submenu__title,
+  .el-menu-item {
+    &:hover {
+      // you can use $subMenuHover
+      background-color: $menuHover !important;
+    }
+  }
+}

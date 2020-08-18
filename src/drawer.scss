@@ -137,13 +137,15 @@ $directions: rtl, ltr, ttb, btt;
 
   &__header {
     align-items: center;
-    color: rgb(114, 118, 123);
+    color: #7F7F7F;
     display: flex;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     padding: $--dialog-padding-primary;
-    padding-bottom: 0;
+    background-color: #f6f6f6;
     & > :first-child {
       flex: 1;
+      outline: none;
+      font-size: 18px;
     }
   }
 

@@ -7,7 +7,7 @@
   height: 56px;
   line-height: 56px;
   font-size: $--menu-item-font-size;
-  color: $--menu-item-font-color;
+  color: #666666;
   padding: 0 20px;
   list-style: none;
   cursor: pointer;
@@ -38,11 +38,12 @@
 }
 
 @include b(menu) {
-  border-right: solid 1px #e6e6e6;
   list-style: none;
   position: relative;
   margin: 0;
   padding-left: 0;
+  height: 100%;
+  width: 100%;
   background-color: $--menu-background-color;
   @include utils-clearfix;
   &.el-menu--horizontal {
